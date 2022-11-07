@@ -14,7 +14,7 @@ use App\Http\Controllers\TrabajadoresController;
 |
 */
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
 Route::get('/trabajadores', function () {
