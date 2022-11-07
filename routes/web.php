@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\TrabajadoresController;
 
 /*
@@ -14,9 +13,32 @@ use App\Http\Controllers\TrabajadoresController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::resorce('trabajadores',TrabajadoresController::class);
+Route::get('/trabajadores', function () {
+    return view('trabajadores.index');
+});
+
+Route::get('/trabajadores/panel', function () {
+    return view('trabajadores.panel');
+});
+
+Route::get('/trabajadores/panel/optrabajadores', function () {
+    return view('trabajadores.trabajadores');
+});
+
+Route::get('/trabajadores/panel/optrabajadores/verlista', function () {
+    return view('trabajadores.vertrabajadores');
+});
+
+Route::get('/trabajadores/panel/optrabajadores/crear', function () {
+    return view('trabajadores.agregarTrabajador');
+});
+
+
+
+Route::resource('trabajadores', TrabajadoresController::class);
+
+

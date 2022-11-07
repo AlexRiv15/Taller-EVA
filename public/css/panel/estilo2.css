@@ -1,0 +1,192 @@
+body{
+    font-family: helvetica;
+    background-color: #161B1F;
+}
+.log{
+    width: 1200px;
+    background-color: #8D63A5;
+    border: #39ff14 solid;
+}
+.menu1 a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+    }
+    .menu1 a:hover{
+    background-color: #39ff14;
+    color: black;
+    padding: 20px;
+    }
+    .lineanegra{
+        width: 1200px;
+        height: 50px;
+        background-color: #39ff14;
+        border: #8D63A5 solid;
+        border-bottom: none;
+    }
+    .menugen1{
+        width: 1200px;
+        background-color: #5E366E;
+        border: #39ff14 solid;
+        border-top: none;
+    }
+    .imgmen{
+    width: 390px;
+    display: inline-block;
+    }
+    .tiempo{
+    width: 390px;
+    display: inline-block;
+    font-size: 20px;
+    }
+.diaSemana{
+    display: inline-block;
+}
+.dia{
+    display: inline-block;
+}
+.de{
+    display: inline-block;
+}
+.mes{
+    display: inline-block;
+}
+.del{
+    display: inline-block;
+}
+.year{
+    display: inline-block;
+}
+.horas{
+    display: inline-block;
+}
+.dia{
+    display: inline-block;
+}
+.dos{
+    display: inline-block;
+}
+.minutos{
+    display: inline-block;
+}
+.ampm{
+    display: inline-block;
+}
+.nombre{
+    width: 390px;
+    display: inline-block;
+}
+.imgeva1{
+    width: 80px;
+    height: 100px;
+}
+.menu{
+width: 1200px;
+height: 50px;
+}
+.menu a{
+text-decoration: none;
+color: white;
+margin-right: 10px;
+padding: 10px;
+}
+.menu a:hover{
+background-color: #39ff14;
+color: black;
+padding: 20px;
+}
+.general1{
+    width: 1200px;
+    height: 450px;
+    background-color: #5E366E;
+    border: #39ff14 solid;
+}
+.general2{
+    width: 1200px;
+    height: 250px;
+    background-color: #5E366E;
+    border: #39ff14 solid;
+}
+
+.boton1C{
+    background-color:#39ff14; 
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    }
+    
+    .boton1C:hover{
+        background-color: #FDBB39;
+        color: black;
+        transition: all 0.5s ease;
+    }
+    .form1{
+        width: 1200px;
+        height: 300px;
+        background-color: #5E366E;
+        border: #39ff14 solid;
+    }
+.form2{
+    width: 500px;
+    text-align: left;
+}
+.cajas2{
+    width: 250px;
+}
+.cajas12{
+    width: 220px;
+}
+.general3{
+    width: 1200px;
+    height: auto;
+    background-color: #5E366E;
+    border: #39ff14 solid;
+}
+.foto_chica{
+    width: 200px;
+    height: 200px;
+}
+.tabla{
+    text-align: center;
+    border: 1px #33476f solid;
+  }
+  
+  .tabla td{
+  border: 1px #33476f solid;
+  padding: 2px 2px;
+  color: black;
+  }
+  
+  .tabla tr{
+    border: 1px #33476f solid;
+    padding: 2px 2px;
+    background-color: #FDBB39;
+    color: black;
+    }
+    .tabla2{
+        text-align: center;
+        border: 1px #33476f solid;
+      }
+      
+      .tabla2 td{
+      border: 1px #33476f solid;
+      padding: 10px 10px;
+      color: black;
+      }
+      
+      .tabla2 tr{
+        border: 1px #33476f solid;
+        padding: 10px 10px;
+        background-color: #FDBB39;
+        color: black;
+        }
+    .salida{
+        width: 1200px;
+    height: auto;
+    background-color: #5E366E;
+    border: #39ff14 solid;
+}
+    

@@ -3,7 +3,7 @@
 <div class="menugen1">
 </br>
     <div class="imgmen">
-        <img src="imagenes/pryecto.png" class="img2">
+        <img src="{{asset('storage')}}\imagenes\pryecto.png" class="img2">
     </div>
     <div class="tiempo">
     <div class="horario">
@@ -26,19 +26,19 @@
                 </div>
             </div>
         </div>
-        <script src="reloj.js"></script>
+        <script src="{{asset('js/reloj.js')}}"></script>
     </div>
     </div>
     <div class="nombre">
-    <img src="imagenes/eva01.jpg" class="imgeva1">
+    <img src="{{asset('storage')}}\imagenes\eva01.jpg" class="imgeva1">
         <h1> Taller de bicicletas "EVA-01"</h1>
     </div>
 </div>
 
 <div class="menu">
 </br></br>
-  <a href="paneladministrativo.php">Inicio</a>
-  <a href="trabajadores.php">Trabajadores</a>
+  <a href="{{url('/trabajadores/panel')}}">Inicio</a>
+  <a href="{{url('/trabajadores/panel/optrabajadores')}}">Trabajadores</a>
   <a href="citas.php">Citas</a>
   <a href="salir.php">Cerrar sesion</a>
 </div>

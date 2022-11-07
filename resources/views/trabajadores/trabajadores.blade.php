@@ -1,6 +1,3 @@
-<?php 
-include "seguridad.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +5,12 @@ include "seguridad.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=|, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="{{asset('css/panel/estilo2.css')}}">
     <link rel="stylesheet" href="normalize">
 </head>
 <body>
     <center>
-<?php
-include "menu.php"
-?>
+    @include('trabajadores/menu')
 </br></br>
 <div class="general2">
 <div class="titulo1">
@@ -23,8 +18,8 @@ include "menu.php"
 </div>
 <div class="botonestrab">
 </br></br>
-<a href="verTrabajadores.php" class="boton1C">Ver Trabajadores</a>
-<a href="agregarTrabajador.php" class="boton1C">Agregar Trabajador</a>
+<a href="{{url('/trabajadores/panel/optrabajadores/verlista')}}" class="boton1C">Ver Trabajadores</a>
+<a href="{{url('/trabajadores/panel/optrabajadores/crear')}}" class="boton1C">Agregar Trabajador</a>
 </div>
 </div>
 </center>
