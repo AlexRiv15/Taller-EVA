@@ -3,7 +3,7 @@
 <div class="menugen1">
 </br>
     <div class="imgmen">
-        <img src="imagenes/pryecto.png" class="img2">
+        <img src="{{asset('storage')}}\imagenes\pryecto.png" class="img2">
     </div>
     <div class="tiempo">
     <div class="horario">
@@ -30,7 +30,7 @@
     </div>
     </div>
     <div class="nombre">
-    <img src="imagenes/eva01.jpg" class="imgeva1">
+    <img src="{{asset('storage')}}\imagenes\eva01.jpg" class="imgeva1">
         <h1> Taller de bicicletas "EVA-01"</h1>
     </div>
 </div>
@@ -40,5 +40,5 @@
   <a href="{{url('/')}}">Inicio</a>
   <a href="{{url('/aprende')}}">Aprende</a>
   <a href="{{url('/contactanos')}}">Contactanos</a>
-  <a href="login/index.php">Trabajadores</a>
+  <a href="{{url('/trabajadores')}}">Trabajadores</a>
 </div>

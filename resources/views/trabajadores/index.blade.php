@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('css/panel/estilo2.css')}}">
     <link rel="stylesheet" href="normalize">
-</head>
+</head>{{}}
 <body>
 <center>
 <div class="log">

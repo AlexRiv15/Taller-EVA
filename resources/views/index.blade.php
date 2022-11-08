@@ -22,7 +22,7 @@
     </p>
     </div>
     <div class="imgtext">
-    <img src="imagenes/bici1.jpg" class="img1">
+    <img src="{{asset('storage')}}\imagenes\pryecto.png" class="img1">
     </div>
 </div>
 </br>

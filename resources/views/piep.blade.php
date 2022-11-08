@@ -1,3 +1,3 @@
 <div class="imgpie">
-    <img src="imagenes/eva01.jpg" class="imgeva">
+    <img src="{{asset('storage')}}\imagenes\eva01.jpg" class="imgeva">
 </div>
