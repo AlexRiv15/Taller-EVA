@@ -1,0 +1,121 @@
+body{
+    font-family: helvetica;
+    background-color: #52BE34;
+}
+.lineanegra{
+    width: 1200px;
+    height: 50px;
+    background-color: black;
+    border: #8D63A5 solid;
+    border-bottom: none;
+}
+.menugen1{
+    width: 1200px;
+    background-color: white;
+    border: #8D63A5 solid;
+    border-top: none;
+}
+.imgmen{
+width: 390px;
+display: inline-block;
+}
+.tiempo{
+width: 390px;
+display: inline-block;
+font-size: 20px;
+}
+.diaSemana{
+    display: inline-block;
+}
+.dia{
+    display: inline-block;
+}
+.de{
+    display: inline-block;
+}
+.mes{
+    display: inline-block;
+}
+.del{
+    display: inline-block;
+}
+.year{
+    display: inline-block;
+}
+.horas{
+    display: inline-block;
+}
+.dia{
+    display: inline-block;
+}
+.dos{
+    display: inline-block;
+}
+.minutos{
+    display: inline-block;
+}
+.ampm{
+    display: inline-block;
+}
+.nombre{
+    width: 390px;
+    display: inline-block;
+}
+.imgeva1{
+    width: 80px;
+    height: 100px;
+}
+.menu{
+width: 1200px;
+height: 50px;
+}
+.menu a{
+text-decoration: none;
+color: black;
+margin-right: 10px;
+padding: 10px;
+}
+.menu a:hover{
+background-color: #8D63A5;
+color: white;
+padding: 20px;
+}
+.general1{
+    width: 1200px;
+    height: 450px;
+    background-color: white;
+    border: #8D63A5 solid;
+}
+.texto1{
+    width: 590px;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.imgtext{
+    width: 590px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.img1{
+    width: 400px;
+    height:300px ;
+}
+.imgeva{
+    width: 170px;
+    height: 200px;
+}
+.form1{
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    border: #8D63A5 solid;
+}
+.semana1{
+    width: 490px;
+    display: inline-block;
+}
+.semana2{
+    width: 490px;
+    display: inline-block;
+}

@@ -14,7 +14,7 @@ use App\Http\Controllers\TrabajadoresController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/trabajadores', function () {
@@ -37,6 +37,9 @@ Route::get('/trabajadores/panel/optrabajadores/crear', function () {
     return view('trabajadores.agregarTrabajador');
 });
 
+Route::get('/aprende', function () {
+    return view('aprende');
+});
 
 
 Route::resource('trabajadores', TrabajadoresController::class);
