@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\trabajadores;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TrabajadoresController extends Controller
 {
@@ -35,7 +36,14 @@ class TrabajadoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datosTrabajadores = $request->except(['_token']);
+        if($request->hasFile('foto')){
+            $datosTrabajadores['foto']=$request->file('foto')->store('uploads','public');
+        }
+        //$redireccion = '/trabajadores'.$datosTrabajadores['id'];
+        trabajadores::insert($datosTrabajadores);
+        return redirect('/trabajadores/1');
+        //return response()->json($datosTrabajadores);
     }
 
     /**
@@ -44,9 +52,10 @@ class TrabajadoresController extends Controller
      * @param  \App\Models\trabajadores  $trabajadores
      * @return \Illuminate\Http\Response
      */
-    public function show(trabajadores $trabajadores)
+    public function show(Request $request)
     {
-        //
+        $datos['trabajadores']=trabajadores::paginate(100);
+        return view('trabajadores.verTrabajadores', $datos);
     }
 
     /**
@@ -78,8 +87,12 @@ class TrabajadoresController extends Controller
      * @param  \App\Models\trabajadores  $trabajadores
      * @return \Illuminate\Http\Response
      */
-    public function destroy(trabajadores $trabajadores)
+    public function destroy($id)
     {
-        //
+        $trabajadores=trabajadores::findOrFail($id);
+        if(Storage::delete('public/'.$trabajadores->foto)){
+            trabajadores::destroy($id);
+        }
+        return redirect('/trabajadores/1');
     }
 }

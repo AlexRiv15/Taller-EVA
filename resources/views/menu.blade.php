@@ -40,5 +40,5 @@
   <a href="{{url('/')}}">Inicio</a>
   <a href="{{url('/aprende')}}">Aprende</a>
   <a href="{{url('/contactanos')}}">Contactanos</a>
-  <a href="{{url('/trabajadores')}}">Trabajadores</a>
+  <a href="{{url('/trabajadores/login')}}">Trabajadores</a>
 </div>

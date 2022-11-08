@@ -15,10 +15,11 @@
 <div class="form1">
     <h1>Agregar Trabajador</h1>
     <div class="form2">
-<form action="guardar_trabajador.php" name="guardarform" method="post" enctype="multipart/form-data">
-<p>Nombre: <input class="cajas2" type="text" name="nombreUsuario" required ></p>
+<form action="{{url('/trabajadores')}}" name="guardarform" method="post" enctype="multipart/form-data">
+@csrf
+<p>Nombre: <input class="cajas2" type="text" name="nombre_usuario" required ></p>
 
-<p>Contraseña: <input class="cajas12" type="text" name="contrasena" required >
+<p>Contraseña: <input class="cajas12" type="password" name="contrasena" required >
 <p> <select name="puesto" class="cajas3"  id="">
 <option value="0" class="caja3"  >Seleccione un puesto</option>
 <option value="mecanico" class="caja3"  >Mecanico</option>

@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/trabajadores', function () {
+
+Route::get('/trabajadores/login', function () {
     return view('trabajadores.index');
 });
 
@@ -41,7 +42,4 @@ Route::get('/aprende', function () {
     return view('aprende');
 });
 
-
 Route::resource('trabajadores', TrabajadoresController::class);
-
-

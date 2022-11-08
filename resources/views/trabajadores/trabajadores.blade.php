@@ -18,7 +18,7 @@
 </div>
 <div class="botonestrab">
 </br></br>
-<a href="{{url('/trabajadores/panel/optrabajadores/verlista')}}" class="boton1C">Ver Trabajadores</a>
+<a href="{{url('/trabajadores/1')}}" class="boton1C">Ver Trabajadores</a>
 <a href="{{url('/trabajadores/panel/optrabajadores/crear')}}" class="boton1C">Agregar Trabajador</a>
 </div>
 </div>

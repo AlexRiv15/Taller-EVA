@@ -27,16 +27,24 @@
 <td>contraseña</td>
 <td>Eliminar</td>
 </tr>
-
+@foreach($trabajadores as $trabajador)
     <tr class="infotabla">
-        <td>id></td>
-        <td>Foto</td>
-        <td>nombre_usuario</td>
-        <td>puesto</td>
-        <td>contrasena</td>
-        <td><a href="#">Eliminar</a></td>
+        <td>{{$trabajador->id}}</td>
+        <td>
+            <img src="{{asset('storage')}}.'/'.{{$trabajador->foto}}" alt="Foto Alterna" width="50px" high="100px">
+        </td>
+        <td>{{$trabajador->nombre_usuario}}</td>
+        <td>{{$trabajador->puesto}}</td>
+        <td>{{$trabajador->contrasena}}</td>
+        <td>
+            <form method="post" action="{{url('/trabajadores/'.$trabajador->id)}}">
+                @csrf
+                {{method_field('DELETE')}}
+                <input type="submit" onclick="return confirm('¿Estás seguro que quieres eliminar a este empleado?')" value="ELIMINAR">
+            </form>
+        </td>
 </tr>
-
+@endforeach
 
 </table>
 
